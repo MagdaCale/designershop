@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* 
+
+font-family: 'Karla', sans-serif;
+Farbe: #323A45 / #848484
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    color: #323A45;
+}
+
+body {
+    margin: 0 5vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #848484;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    margin-bottom: 5vh;
+}
+
+img {
+    width: 100%;
+    background: #848484;
+}
+
+img:hover {
+    opacity: 30%;
+    transition: 0.5s;
+}
+
+/* +++++++++++++++++ HEADER & NAV +++++++++++++++++ */
+
+header {
+    margin: 8vh 0;
+}
+
+.headerNavigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navBar {
+    column-gap: 50px;
+    text-align: right;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 20vw 5vw 3vw;
+}
+
+.navBar>a:hover {
+    color: #848484;
+}
+
+h2:hover {
+    color: #848484;
+}
+
+
+/* +++++++++++++++++ MAIN +++++++++++++++++ */
+
+main {
+    display: grid;  
+}
+
+/* ++++++ ALL SECTION STYLING ++++++ */
+
+.heroArticle{
+    display: grid;
+}
+
+.heroDiv, .articleDiv {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 2vh 0;
+}
+
+.prices{
+    text-align: right;
+}
+
+/* ++++++ ALL ARTICLE STYLING ++++++ */
+
+.sectionCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3vw;
+    margin: 5vh 0;
+}
+
+.card {
+    margin-bottom: 5vh;
+}
+
+/* +++++++++++++++++ FOOTER +++++++++++++++++ */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+.footerDiv1>p, .contactDiv>p {
+    margin: 5px 0;
+    font-weight:400;
+    color: #323A45;
+}
+
+.thickSpan {
+    font-weight: 600;
+}
+
+/* +++++++++++++++++ footerInfoSection +++++++++++++++++ */
+
+.footerInfoSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerInfoSection>p {
+    font-weight:lighter;
+}
+
+.socialmedia>a {
+    padding: px 0;
+}
+
+/* +++++++++++++++++ footerInfoSection +++++++++++++++++ */
+
+.footerSMSection {
+    display: flex;
+}
+
+/* +++++++++++++++++ footerInfoSection +++++++++++++++++ */
+
+.info {
+    margin-bottom: 10vh;
+}
+
+.bull {
+    font-size: 20px;
+    margin: 0 10px;
+    font-weight:600;
+}
+
+.contact {
+    width: 6vw;
+    margin-right: 10vw;
+}
+
+.newsletter {
+    margin-right: 10vw;
+}
+
+.italicP {
+    font-weight:lighter;
+    font-style: italic;
+}
+
+.findeUs {
+    width: 6vw;
+    margin-right: 10vw;
+}
+
+.subscribe {
+    font-weight: 800;
+}
+
+/* +++++++++++++++++ FOOTER HOVER +++++++++++++++++ */
+
+.subscribe:hover, .thickSpan:hover, .socialmedia>a:hover, .contactDiv>p:hover{
+    margin: 5px;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: 0.2s;
+}
+
+
+/* +++++++++++++++++ MOBILE MENU +++++++++++++++++ */
+
+
+.mobil_menu {
+    display: none;
+    padding: 10px;
+}
+.mobil_menu span {
+    display: block;
+    background-color: black;
+    margin: 3px 0;
+    width: 50px;
+    height: 6px;
+    color: #323A45;
+    border-radius: 2px;
+
+}
+
+.copyrightMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 576px){
+    .navBar {
+        display: none;
+    }
+
+    header {
+        display: grid;
+    }
+
+    .mobil_menu {
+        display: block;
+        display: grid;    
+        justify-content: end;
+    }
+
+    .sectionCard {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 3vw;
+        margin: 5vh 0;
+    }
+    
+    footer {
+        display: grid;
+    }
+
+    .footerInfoSection {
+        display: grid;
+        flex-direction: row;
+    }
+
+    .footerSMSection {
+        display: grid;
+        flex-direction: row;
+    }
+
+    .copyright1 {
+        display: none;
+    }
+
+    .copyrightMobile {
+        display: inline;
+    }
+
+    .mobileStyle {
+        width: 100vw;
+        margin-bottom: 3vh;
+    }
+
+    h4 {
+        margin-bottom: 3vh;
+    }
+    .socialmedia{
+        width: 5vw;
+
+    }
+}
