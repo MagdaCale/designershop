@@ -46,7 +46,12 @@ img {
     background: #848484;
 }
 
-img:hover {
+.card>a:hover {
+    opacity: 30%;
+    transition: 0.5s;
+}
+
+.heroArticle>a:hover {
     opacity: 30%;
     transition: 0.5s;
 }
@@ -59,6 +64,7 @@ header {
 
 .headerNavigation {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -203,18 +209,16 @@ footer{
 
 
 .mobil_menu {
+    
     display: none;
-    padding: 10px;
 }
 .mobil_menu span {
     display: block;
-    background-color: black;
+    background-color: #323A45;
     margin: 3px 0;
-    width: 50px;
-    height: 6px;
-    color: #323A45;
+    width: 40px;
+    height: 4px;
     border-radius: 2px;
-
 }
 
 .copyrightMobile {
@@ -239,8 +243,6 @@ footer{
     .sectionCard {
         display: grid;
         grid-template-columns: 1fr;
-        column-gap: 3vw;
-        margin: 5vh 0;
     }
     
     footer {
