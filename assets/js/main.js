@@ -7,10 +7,10 @@ let produktTxt = document.getElementsByClassName('produktText')
 fetch('https://fakestoreapi.com/products')
 .then(response => response.json())
 .then(shop => { 
-    let o = 0
+    let o = 0 // index shop Inhalte
 
     for(let i = 0; i < bilder.length; i++){
-        if(o == shop.length){
+        if(o === shop.length){
             o = 0
             i--
         }else{
