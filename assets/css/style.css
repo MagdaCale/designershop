@@ -17,6 +17,8 @@ Farbe: #323A45 / #848484
 
 body {
     margin: 0 5vw;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 a {

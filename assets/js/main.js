@@ -6,12 +6,7 @@ let produktTxt = document.getElementsByClassName('produktText')
 
 fetch('https://fakestoreapi.com/products')
 .then(response => response.json())
-.then(shop => {
-    console.log(shop)
-    console.log(shop[0].image)
-    console.log(shop[0].price)
-    console.log(shop[0].title)
-    
+.then(shop => { 
     let o = 0
 
     for(let i = 0; i < bilder.length; i++){
